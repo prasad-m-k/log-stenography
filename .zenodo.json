@@ -1,0 +1,26 @@
+{
+  "title": "Log stenography: code and data",
+  "upload_type": "software",
+  "description": "Code, benchmarks, and data behind \"Log stenography: Shrinking container log bytes at the source to stay inside Kubernetes rotation and eviction limits\" (Mukkamala, manuscript submitted to the Journal of Systems and Software, 2026). Includes the Go stroke encoder and expander benchmarks, Python byte-accounting and sensitivity scripts, the node emulator, and every figure and raw result reported in the paper.",
+  "creators": [
+    {
+      "name": "Mukkamala, Kameswara Prasad",
+      "orcid": "0009-0004-9496-6339"
+    }
+  ],
+  "keywords": [
+    "logging",
+    "kubernetes",
+    "observability",
+    "log-compression",
+    "container-logs"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/prasad-m-k/k8s-silent-log-loss",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
