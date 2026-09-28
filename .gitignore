@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Loghub samples downloaded at run time (see README: not redistributed here)
+data/*
+!data/.gitkeep
+
+# Go
+*.test
+*.prof
+
+# OS
+.DS_Store
