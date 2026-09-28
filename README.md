@@ -27,8 +27,10 @@ Every figure except the benchmark times is deterministic for a given seed. Bench
 
 ```
 bytes/measure_bytes.py     Byte accounting on Loghub samples, with CRI framing and gzip
+bytes/sensitivity.py       Argument share, high-entropy values, escaping, stack traces, framing variants
 bench/                     Go benchmarks: stroke encoder, slog, zap, pipe writes, expander
 bench/summarize.py         Medians from `go test -bench` output
+bench/ingest/              Standard-library-only Go module: ingest JSON decode vs expander, envelope memory
 sim/nodesim_steno.py       Discrete-time emulator of one container's log path
 experiments/run_all.py     Every emulator experiment in the paper
 analysis/make_figures.py   Every figure in the paper
@@ -73,6 +75,21 @@ go test -run xxx -bench . -benchtime=2s -count=5 | grep '^Benchmark' | tee ../re
 cd .. && python bench/summarize.py results/bench.txt
 ```
 
+**Sensitivity (Tables 8 and 9, Sections 2.1, 4.2, 5.5).** Needs the Loghub files from the byte accounting.
+
+```bash
+python bytes/sensitivity.py --offline
+```
+
+**Ingest cost and envelope memory (Sections 4.3 and 6.2).** Uses only the Go standard library, so it builds without a module proxy.
+
+```bash
+cd bench/ingest
+go test -run xxx -bench . -benchtime=2s -count=5 | grep '^Benchmark' | tee ../../results/bench_ingest.txt
+go test -run TestEnvelopeFootprint -v . | grep heap_per | sed 's/^ *//' > ../../results/envelope.txt
+cd ../.. && python bench/summarize.py results/bench_ingest.txt results/bench_ingest_summary.csv
+```
+
 **Emulator experiments (Tables 4 to 7, Fig. 4).** Line sizes come from `results/bytes.json`, so run the byte accounting first.
 
 ```bash
@@ -87,6 +104,9 @@ python analysis/make_figures.py
 | Table 2, Fig. 3: byte accounting and gzip | `bytes/measure_bytes.py` | `results/bytes.csv`, `results/bytes.json` |
 | Fig. 2: prefix ceiling (analytic) | `analysis/make_figures.py` | `figures/fig2_ceiling.*` |
 | Table 3: encoder, pipe, expander cost | `bench/*_test.go` | `results/bench.txt`, `results/bench_summary.csv` |
+| Tables 8 and 9, framing and escaping figures | `bytes/sensitivity.py` | `results/sensitivity.json`, `results/sensitivity_bins.csv` |
+| Section 6.2: ingest decode vs expander | `bench/ingest/ingest_test.go` | `results/bench_ingest.txt`, `results/bench_ingest_summary.csv` |
+| Section 4.3: envelope memory | `bench/ingest/envelope_test.go` | `results/envelope.txt` |
 | Table 4: validation against the companion study | `experiments/run_all.py` | `results/validation.csv` |
 | Fig. 4, Table 5: loss against event rate | `experiments/run_all.py` | `results/event_rate_sweep.csv` |
 | Table 6: per-line shipper cost | `experiments/run_all.py` | `results/per_line_cost.csv` |

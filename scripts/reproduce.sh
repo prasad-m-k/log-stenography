@@ -12,6 +12,12 @@ echo "[2/5] Go benchmarks (Table 3); takes about 2 minutes"
   go test -run xxx -bench . -benchtime=2s -count=5 ) | grep '^Benchmark' | tee results/bench.txt
 python3 bench/summarize.py results/bench.txt
 
+echo "[2b] Sensitivity (Tables 8, 9) and ingest/envelope benchmarks"
+python3 bytes/sensitivity.py --offline
+( cd bench/ingest && go test -run xxx -bench . -benchtime=2s -count=5 ) | grep '^Benchmark' | tee results/bench_ingest.txt
+python3 bench/summarize.py results/bench_ingest.txt results/bench_ingest_summary.csv
+( cd bench/ingest && go test -run TestEnvelopeFootprint -v . ) | grep heap_per | sed 's/^ *//' > results/envelope.txt
+
 echo "[3/5] Emulator experiments (Tables 4 to 7, Fig. 4)"
 python3 experiments/run_all.py --seeds 5
 

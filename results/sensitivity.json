@@ -1,0 +1,204 @@
+{
+ "lines": 16000,
+ "plain": {
+  "mean_plain_payload": 154.9719375,
+  "mean_h_s1": 62.420312499999994,
+  "delta_plain": 0.18798403420619297,
+  "delta_star_plain": 0.597215382946348
+ },
+ "mean_json_payload": 198.685625,
+ "mean_stroke_payload": 66.9275625,
+ "mean_arg_bytes": 29.13225,
+ "mean_h": 37.7953125,
+ "delta_pooled": 0.14662485018732482,
+ "delta_star": 0.8097732913490847,
+ "per_line_k_min": 1.0370075606844409,
+ "lines_k_below_1": 0,
+ "delta_by_system": {
+  "HDFS": 0.2857097001990114,
+  "Hadoop": 0.11963522251005665,
+  "Spark": 0.10846590653026274,
+  "Zookeeper": 0.05718939217670326,
+  "BGL": 0.05084387788602891,
+  "OpenStack": 0.24393609655553974,
+  "Apache": 0.13474894602820284,
+  "Android": 0.12415287116756135
+ },
+ "bins": [
+  {
+   "bin": "0.00-0.05",
+   "lines": 5301,
+   "mean_json_payload": 171.73457838143747,
+   "mean_delta": 0.017350183717519896,
+   "mean_h": 32.96736464817959,
+   "k_measured": 2.7646900190244574,
+   "k_model_pooled_h": 2.60146422633198,
+   "top_system": "BGL",
+   "top_share": 0.27956989247311825
+  },
+  {
+   "bin": "0.05-0.10",
+   "lines": 2990,
+   "mean_json_payload": 183.76153846153846,
+   "mean_delta": 0.07634403318245436,
+   "mean_h": 29.639130434782608,
+   "k_measured": 2.6546149045260274,
+   "k_model_pooled_h": 2.421362437924618,
+   "top_system": "Apache",
+   "top_share": 0.2836120401337793
+  },
+  {
+   "bin": "0.10-0.15",
+   "lines": 1986,
+   "mean_json_payload": 190.24320241691842,
+   "mean_delta": 0.12275324689073984,
+   "mean_h": 37.8313192346425,
+   "k_measured": 2.263001507849688,
+   "k_model_pooled_h": 2.2637992040239148,
+   "top_system": "Spark",
+   "top_share": 0.34441087613293053
+  },
+  {
+   "bin": "0.15-0.20",
+   "lines": 1085,
+   "mean_json_payload": 240.6331797235023,
+   "mean_delta": 0.16926541727470154,
+   "mean_h": 42.01566820276498,
+   "k_measured": 2.2758872379249993,
+   "k_model_pooled_h": 2.356246645666811,
+   "top_system": "Hadoop",
+   "top_share": 0.3142857142857143
+  },
+  {
+   "bin": "0.20-0.30",
+   "lines": 2733,
+   "mean_json_payload": 252.8298572996707,
+   "mean_delta": 0.24729371447095735,
+   "mean_h": 61.60373216245883,
+   "k_measured": 1.7794177605630057,
+   "k_model_pooled_h": 2.079202365524209,
+   "top_system": "OpenStack",
+   "top_share": 0.376143432125869
+  },
+  {
+   "bin": "0.30-0.40",
+   "lines": 1459,
+   "mean_json_payload": 190.07676490747087,
+   "mean_delta": 0.3262885742926995,
+   "mean_h": 30.39136394790953,
+   "k_measured": 1.7320636845160726,
+   "k_model_pooled_h": 1.6409931793487644,
+   "top_system": "Apache",
+   "top_share": 0.3899931459904044
+  },
+  {
+   "bin": "0.40-0.60",
+   "lines": 416,
+   "mean_json_payload": 213.21153846153845,
+   "mean_delta": 0.4208758004870569,
+   "mean_h": 17.54326923076923,
+   "k_measured": 1.714415407561118,
+   "k_model_pooled_h": 1.5083972993423795,
+   "top_system": "HDFS",
+   "top_share": 0.8605769230769231
+  },
+  {
+   "bin": "0.60-1.00",
+   "lines": 30,
+   "mean_json_payload": 774.8666666666667,
+   "mean_delta": 0.8220338983050848,
+   "mean_h": 20.733333333333334,
+   "k_measured": 1.1676923810886886,
+   "k_model_pooled_h": 1.1398575090794119,
+   "top_system": "Android",
+   "top_share": 0.8333333333333334
+  }
+ ],
+ "inject": [
+  {
+   "kind": "none",
+   "added_bytes": 0,
+   "k_disk": 2.22080087280763,
+   "k_eq10": 2.22080087280763,
+   "k_gzip": 1.2971276653188535
+  },
+  {
+   "kind": "uuid (36 B)",
+   "added_bytes": 36,
+   "k_disk": 1.9298304627182286,
+   "k_eq10": 1.9154470499700151,
+   "k_gzip": 1.1605752862090273
+  },
+  {
+   "kind": "trace+span ids (49 B)",
+   "added_bytes": 49,
+   "k_disk": 1.8532903336616748,
+   "k_eq10": 1.8396107121080145,
+   "k_gzip": 1.1352490790455783
+  },
+  {
+   "kind": "base64 blob (256 B)",
+   "added_bytes": 256,
+   "k_disk": 1.3692734568384377,
+   "k_eq10": 1.3620447475725335,
+   "k_gzip": 1.0365486882725412
+  },
+  {
+   "kind": "base64 blob (1024 B)",
+   "added_bytes": 1024,
+   "k_disk": 1.1189467596698177,
+   "k_eq10": 1.1164014967609732,
+   "k_gzip": 1.012711688214969
+  }
+ ],
+ "escaping": {
+  "args": 41512,
+  "args_needing_escape": 1,
+  "escape_bytes": 7
+ },
+ "traces": [
+  {
+   "frames": 10,
+   "trace_bytes": 806,
+   "plain_lines": 12,
+   "plain_disk": 1341,
+   "json_disk": 989,
+   "stroke_disk": 882,
+   "stroke_escape_bytes": 20,
+   "k_vs_plain": 1.5204081632653061,
+   "k_vs_json": 1.1213151927437641
+  },
+  {
+   "frames": 30,
+   "trace_bytes": 2422,
+   "plain_lines": 32,
+   "plain_disk": 3757,
+   "json_disk": 2645,
+   "stroke_disk": 2538,
+   "stroke_escape_bytes": 60,
+   "k_vs_plain": 1.4802994483845549,
+   "k_vs_json": 1.0421591804570527
+  },
+  {
+   "frames": 60,
+   "trace_bytes": 4715,
+   "plain_lines": 62,
+   "plain_disk": 7250,
+   "json_disk": 4998,
+   "stroke_disk": 4891,
+   "stroke_escape_bytes": 120,
+   "k_vs_plain": 1.482314455121652,
+   "k_vs_json": 1.0218769167859334
+  }
+ ],
+ "framing": {
+  "cri_nominal": 41,
+  "cri_mean_trimmed": 40.8893,
+  "k_cri_nominal": 2.22080087280763,
+  "k_cri_trimmed": 2.222054319193345,
+  "docker_jsonfile_fixed_bytes": 71,
+  "docker_json_per_line": 291.4735,
+  "docker_stroke_per_line": 140.5245625,
+  "k_docker_jsonfile": 2.0741818712298072
+ }
+}

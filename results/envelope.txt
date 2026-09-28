@@ -1,0 +1,1 @@
+envelope_test.go:53: envelopes=1000000 stroke_bytes=67 heap_per_envelope=235.9 B

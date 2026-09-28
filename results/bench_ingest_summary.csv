@@ -1,0 +1,5 @@
+benchmark,runs,ns_per_op_median,ns_per_op_min,ns_per_op_max,bytes_per_line,B_per_op,allocs_per_op
+BenchmarkIngestJSONMap,5,3646.0,3505.0,3926.0,,880.0,32.0
+BenchmarkIngestJSONStruct,5,2499.0,2379.0,2686.0,,416.0,9.0
+BenchmarkExpand,5,936.7,887.7,984.4,,368.0,6.0
+BenchmarkExpandThenJSONMap,5,4095.0,4030.0,4246.0,,1160.0,32.0
