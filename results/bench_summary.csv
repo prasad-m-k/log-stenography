@@ -1,0 +1,8 @@
+benchmark,runs,ns_per_op_median,ns_per_op_min,ns_per_op_max,bytes_per_line,B_per_op,allocs_per_op
+BenchmarkStroke,5,91.33,84.54,94.27,43.98,0.0,0.0
+BenchmarkSlogJSON,5,718.6,703.5,790.9,185.9,0.0,0.0
+BenchmarkZapJSON,5,711.0,698.2,732.1,169.7,192.0,1.0
+BenchmarkStrokeTS,5,200.6,191.1,204.6,56.0,0.0,0.0
+BenchmarkExpand,5,948.7,942.7,955.5,156.0,368.0,6.0
+BenchmarkPipeSlogJSON,5,1202.0,1183.0,1244.0,,0.0,0.0
+BenchmarkPipeStrokeTS,5,543.6,530.3,592.3,,0.0,0.0

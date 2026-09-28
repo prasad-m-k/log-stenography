@@ -1,0 +1,35 @@
+BenchmarkStroke       	31197506	        84.54 ns/op	        43.98 B/line	       0 B/op	       0 allocs/op
+BenchmarkStroke       	26029344	        89.51 ns/op	        44.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkStroke       	24829179	        93.98 ns/op	        44.99 B/line	       0 B/op	       0 allocs/op
+BenchmarkStroke       	28153053	        94.27 ns/op	        45.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkStroke       	26695738	        91.33 ns/op	        45.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkSlogJSON     	 3366459	       703.5 ns/op	       185.9 B/line	       0 B/op	       0 allocs/op
+BenchmarkSlogJSON     	 3412707	       718.6 ns/op	       185.9 B/line	       0 B/op	       0 allocs/op
+BenchmarkSlogJSON     	 3364543	       790.9 ns/op	       185.9 B/line	       0 B/op	       0 allocs/op
+BenchmarkSlogJSON     	 3165308	       714.5 ns/op	       185.9 B/line	       0 B/op	       0 allocs/op
+BenchmarkSlogJSON     	 3143436	       788.1 ns/op	       185.9 B/line	       0 B/op	       0 allocs/op
+BenchmarkZapJSON      	 3391640	       698.3 ns/op	       169.7 B/line	     192 B/op	       1 allocs/op
+BenchmarkZapJSON      	 3653433	       718.8 ns/op	       169.7 B/line	     192 B/op	       1 allocs/op
+BenchmarkZapJSON      	 3307897	       711.0 ns/op	       169.7 B/line	     192 B/op	       1 allocs/op
+BenchmarkZapJSON      	 3286396	       732.1 ns/op	       169.7 B/line	     192 B/op	       1 allocs/op
+BenchmarkZapJSON      	 3458370	       698.2 ns/op	       169.7 B/line	     192 B/op	       1 allocs/op
+BenchmarkStrokeTS     	12020266	       193.0 ns/op	        56.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkStrokeTS     	10522560	       202.4 ns/op	        56.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkStrokeTS     	11865165	       204.6 ns/op	        56.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkStrokeTS     	11162402	       200.6 ns/op	        56.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkStrokeTS     	12012943	       191.1 ns/op	        56.00 B/line	       0 B/op	       0 allocs/op
+BenchmarkExpand       	 2567097	       944.1 ns/op	       156.0 B/record	     368 B/op	       6 allocs/op
+BenchmarkExpand       	 2566460	       942.7 ns/op	       156.0 B/record	     368 B/op	       6 allocs/op
+BenchmarkExpand       	 2519212	       954.9 ns/op	       156.0 B/record	     368 B/op	       6 allocs/op
+BenchmarkExpand       	 2516865	       948.7 ns/op	       156.0 B/record	     368 B/op	       6 allocs/op
+BenchmarkExpand       	 2486912	       955.5 ns/op	       156.0 B/record	     368 B/op	       6 allocs/op
+BenchmarkPipeSlogJSON 	 2027526	      1244 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeSlogJSON 	 1957687	      1202 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeSlogJSON 	 1982229	      1221 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeSlogJSON 	 2023807	      1183 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeSlogJSON 	 2016936	      1198 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeStrokeTS 	 4511162	       543.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeStrokeTS 	 4411896	       592.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeStrokeTS 	 4534767	       562.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeStrokeTS 	 4443996	       537.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPipeStrokeTS 	 4523440	       530.3 ns/op	       0 B/op	       0 allocs/op

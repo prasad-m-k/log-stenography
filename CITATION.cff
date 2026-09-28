@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Log stenography: code and data"
+authors:
+  - family-names: "Mukkamala"
+    given-names: "Kameswara Prasad"
+    alias: "Prasad MK"
+    orcid: "https://orcid.org/0009-0004-9496-6339"
+repository-code: "https://github.com/prasad-m-k/log-stenography"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Log stenography: Shrinking container log bytes at the source to stay inside Kubernetes rotation and eviction limits"
+  authors:
+    - family-names: "Mukkamala"
+      given-names: "Kameswara Prasad"
+  year: 2026
+  notes: "Manuscript under review. Update with the published reference."
