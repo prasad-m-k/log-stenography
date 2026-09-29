@@ -1,5 +1,7 @@
 # Log stenography: code and data
 
+[![DOI](https://zenodo.org/badge/1393703985.svg)](https://doi.org/10.5281/zenodo.23028712)
+
 This repository holds every script, raw result, and figure behind the paper
 
 > Kameswara Prasad Mukkamala (Prasad MK). *Log stenography: Shrinking container log bytes at the source to stay inside Kubernetes rotation and eviction limits.* Manuscript submitted to the Journal of Systems and Software, 2026.
@@ -158,7 +160,7 @@ The Loghub samples come from [logpai/loghub](https://github.com/logpai/loghub) (
 
 ## Citation
 
-See `CITATION.cff`. Until the paper is published, please cite the repository and the manuscript title above.
+See `CITATION.cff`. Until the paper is published, please cite the repository and the manuscript title above, and the archived code via its DOI: [10.5281/zenodo.23028712](https://doi.org/10.5281/zenodo.23028712).
 
 ## License
 

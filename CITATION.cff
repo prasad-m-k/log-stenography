@@ -7,6 +7,10 @@ authors:
     alias: "Prasad MK"
     orcid: "https://orcid.org/0009-0004-9496-6339"
 repository-code: "https://github.com/prasad-m-k/log-stenography"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23028712"
+    description: "Archived snapshot of the code and data on Zenodo"
 license: MIT
 preferred-citation:
   type: article
